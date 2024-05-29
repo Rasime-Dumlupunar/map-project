@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+}
+
+aside{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    left: 20px;
+    top: 0;
+    height: 100vh;
+    z-index: 10000;
+}
+.sidebar {
+    background: rgba(34, 95, 152, 0.677);
+    height: 90vh;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+.sidebar h1{
+    text-align: center;
+    background: rgba(34, 95, 152, 0.975);
+    border-radius: 15px;
+    padding: 5px;
+    font-family: "Edu SA Beginner", cursive;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.sidebar:hover{
+    background: rgba(91, 16, 134, 0.536);    
+}
+
+/*! Form Alanı */
+form {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+form .field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form .field input, 
+select{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+form button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-radius: 10px;
+    background: black;
+    color: #fff;
+    font-weight: bold;
+}
+/* Liste Alanı*/
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    white-space: nowrap;
+    margin-top: 10px;
+    overflow: auto;
+
+    height: 100%;
+    padding-right: 10px;
+}
+ul::-webkit-scrollbar{
+    background: white;
+    border-radius: 10px;
+    width: 12.5px;
+}
+ul::-webkit-scrollbar-thumb {
+    background: burlywood;
+    border-radius: 10px;
+}
+li {
+    background: rgb(124, 169, 221);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+li div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+li div p {
+    border-bottom: 1px solid rgba(91, 16, 134, 0.425);
+}
+li div p span{
+    font-weight: 900;
+}
+li #delete {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    margin: 3px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    padding: 5px;
+}
+li #delete:hover {
+    background: #5479b9;
+    color: white;
+}
+li #fly {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+    margin: 3px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    padding: 5px;
+}
+li #fly:hover {
+    background: #5479b9;
+    color: white;
+}
+#map { 
+    height: 100vh; 
+}
