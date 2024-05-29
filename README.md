@@ -1,7 +1,7 @@
 
 # Ziyaretçi Notları
 
-![]((https://github.com/Rasime-Dumlupunar/map-project/blob/main/map%20project.gif)
+![]map project.gif)
 
 
 Uygulamanın Temel Özellikleri:
